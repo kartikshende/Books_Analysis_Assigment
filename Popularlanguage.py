@@ -1,3 +1,4 @@
+"""Find out Top 5 popular books per languages"""
 import pandas as pd
 import sqlalchemy
 import pymysql
@@ -11,12 +12,14 @@ print(books.head())
 lang = books.language_code
 print(lang)
 
+#To find out each languages availbale
 languages = []
 
 [languages.append(i) for i in lang if i not in languages]
 
 print(languages)
 
+#To find out Top 5 popular books per languges
 popularlanguages = books[(books.language_code == 'eng')].sort_values('ratings_count', ascending=False)[:5]
 print(popularlanguages)
 
