@@ -39,7 +39,7 @@ For running PHP file
 * Step-4 : Give each php file endpoints e.g. using xampp localhost/book/popular.php
 ##### Output is in JSON format
 
-![alt text]()
+![ALT PopularBook](https://github.com/kartikshende/Books_Analysis_Assigment/blob/master/popular.png)
 
 # API Documentation
 [Book-Analysis](https://documenter.getpostman.com/view/7986828/S1a7V5k7?version=latest) Rest API documention link
