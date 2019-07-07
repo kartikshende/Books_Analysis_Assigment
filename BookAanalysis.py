@@ -7,7 +7,7 @@ import sqlalchemy
 
 class Books:
 
-    booksfile = r"C:\Users\Kartik\Desktop\Myfiles\goodreadsbooks\books.csv"
+    booksfile = r"..\books.csv"
 
     try:
         books = pd.read_csv(booksfile,sep=',', error_bad_lines=False,
