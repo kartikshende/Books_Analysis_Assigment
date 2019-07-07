@@ -60,6 +60,7 @@ class Books:
 
         popularperlanguages = books[(books.language_code == row)]
 
+        """ Calling fuction here to sort popular per language"""
         popularlanguages = BooksAnalysis(popularperlanguages,'ratings_count',5)
 
         print(popularlanguages)
