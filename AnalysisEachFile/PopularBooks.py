@@ -13,6 +13,7 @@ print(books.head())
 popularbooks = books.sort_values('ratings_count', ascending=False)[:5]
 print(popularbooks)
 
+
 popularbooks.to_sql(name='popular_books',con=connection, if_exists='replace', index=True)
 
 print("Done")
